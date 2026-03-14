@@ -21,24 +21,7 @@ public class WuBotRevived extends Movable {
             telemetry.addData("Status:", "Running");
 
             omnidirectionalMovement(gamepad1.left_stick_x, gamepad1.left_stick_y);
-
-            /*if(gamepad1.left_bumper || gamepad1.right_bumper) {
-                turn();
-            }*/
-
-            if(gamepad1.left_bumper){
-                FLW.setPower(-1);
-                FRW.setPower(1);
-                BLW.setPower(-1);
-                BRW.setPower(1);
-            } else if (gamepad1.right_bumper){
-                FLW.setPower(1);
-                FRW.setPower(-1);
-                BLW.setPower(1);
-                BRW.setPower(-1);
-            } else {
-                disablePower();
-            }
+            turn();
 
             telemetry.update();
         }

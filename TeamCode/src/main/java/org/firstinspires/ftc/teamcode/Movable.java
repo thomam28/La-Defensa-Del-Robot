@@ -3,7 +3,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-// Code from either Evan Xiang or Arhan Sengupta (or both)
+// Code from either Evan Xiang '28 or Arhan Sengupta '28 (or both)
 // TODO: inherit this class to be able to drive
 @Disabled
 public abstract class Movable extends LinearOpMode {
